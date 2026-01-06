@@ -10,7 +10,9 @@
         <div class="form-group">
           <label for="email" class="label">Email</label>
           <div class="input-wrapper">
-            <span class="input-icon">✉️</span>
+            <span class="input-icon">
+                <Email />
+            </span>
             <input
               id="email"
               v-model="email"
@@ -25,7 +27,9 @@
         <div class="form-group">
           <label for="password" class="label">Senha</label>
           <div class="input-wrapper">
-            <span class="input-icon">🔒</span>
+            <span class="input-icon">
+                <Lock />
+            </span>
             <input
               id="password"
               v-model="password"
@@ -91,6 +95,8 @@
 
 <script setup>
 import { ref } from 'vue';
+import Email from 'vue-material-design-icons/Email.vue';
+import Lock from 'vue-material-design-icons/Lock.vue';
 
 const activeTab = ref('login');
 const email = ref('');
@@ -122,6 +128,12 @@ const loginWithFacebook = () => {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+}
+
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-wrapper {
@@ -273,7 +285,7 @@ const loginWithFacebook = () => {
 .submit-btn {
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background-color: #0d7ff2;
   color: white;
   border: none;
   border-radius: 8px;

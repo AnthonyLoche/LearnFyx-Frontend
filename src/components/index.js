@@ -8,5 +8,7 @@ import NewsletterSection from "./views/homeview/NewsletterSection.vue";
 import FooterMain from "./global/FooterMain.vue";
 import BannerSection from "./views/login/BannerSection.vue";
 import FormSectionLogin from "./views/login/FormSectionLogin.vue";
+import RegisterBanner from "./views/register/RegisterBanner.vue";
+import RegisterForm from "./views/register/RegisterForm.vue";
 
-export { HeaderMain, HeroSection, StatsBar, FeaturesSection, CoursesSection, TestimonialsSection, NewsletterSection, FooterMain, BannerSection, FormSectionLogin };
+export { HeaderMain, HeroSection, StatsBar, FeaturesSection, CoursesSection, TestimonialsSection, NewsletterSection, FooterMain, BannerSection, FormSectionLogin, RegisterBanner, RegisterForm };

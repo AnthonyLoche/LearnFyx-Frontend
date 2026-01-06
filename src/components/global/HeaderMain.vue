@@ -46,7 +46,7 @@ const goToLogin = () => {
 }
 
 const goToRegister = () => {
-  router.push('/cadastro')
+  router.push('/register')
 }
 </script>
 

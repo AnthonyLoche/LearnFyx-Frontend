@@ -11,7 +11,7 @@
             Acesso vitalício e certificados reconhecidos em todo o Brasil.
           </p>
           <div class="hero-buttons">
-            <button class="btn-hero-primary" @click="$emit('start-now')">
+            <button class="btn-hero-primary" @click="router.push('/register')">
               Começar Agora
             </button>
             <button class="btn-hero-secondary" @click="$emit('view-courses')">
@@ -47,6 +47,7 @@
 <script setup>
 import Play from 'vue-material-design-icons/Play.vue'
 import Check from 'vue-material-design-icons/Check.vue'
+import router from '@/router';
 
 defineEmits(['start-now', 'view-courses'])
 </script>

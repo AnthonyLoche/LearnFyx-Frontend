@@ -4,7 +4,7 @@
       <div class="header-left">
         <div class="logo">
           <div class="logo-icon">
-            <School class="icon" />
+            <img src="../../assets/images/Learnfyx-Logo.png" alt="">
           </div>
           <h2 class="logo-text">Learnfyx</h2>
         </div>
@@ -32,7 +32,6 @@
 </template>
 
 <script setup>
-import School from 'vue-material-design-icons/School.vue'
 import Magnify from 'vue-material-design-icons/Magnify.vue'
 </script>
 
@@ -75,13 +74,16 @@ span{
 }
 
 .logo-icon {
-  width: 32px;
-  height: 32px;
-  background-color: #0d7ff2;
+  width: 50px;
+  height: 50px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo-icon img {
+    width: 100%;
 }
 
 .logo-icon .icon {
